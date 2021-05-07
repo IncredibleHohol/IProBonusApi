@@ -1,0 +1,3 @@
+rootProject.name = "IProBonusApi"
+include ':app'
+include ':iprobonusapilib'
