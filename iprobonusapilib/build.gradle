@@ -8,7 +8,7 @@ def githubProperties = new Properties()
 githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
 
 def getVersionName = { ->
-    return "0.0.1"
+    return "0.0.3"
 }
 
 def getArtificatId = { ->
@@ -27,7 +27,7 @@ publishing {
 
     repositories {
         maven {
-            name = "IProBonusApi"
+            name = "GitHubPackages"
 
             url = uri("https://maven.pkg.github.com/IncredibleHohol/IProBonusApi")
 
