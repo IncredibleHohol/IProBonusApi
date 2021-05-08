@@ -1,10 +1,18 @@
 package dev.incrediblehohol.iprobonusapilib.models
 
+import com.google.gson.annotations.SerializedName
+
 internal data class ResultOperation(
-    val status: Int,
-    val message: String,
-    val messageDev: String,
-    val codeResult: Int,
-    val duration: Int,
-    val idLog: String
+    @SerializedName("status")
+    val status: Int? = null,
+    @SerializedName("message")
+    val message: String? = null,
+    @SerializedName("messageDev")
+    val messageDev: String? = null,
+    @SerializedName("codeResult")
+    val codeResult: Int? = null,
+    @SerializedName("duration")
+    val duration: Int? = null,
+    @SerializedName("idLog")
+    val idLog: String? = null
 )

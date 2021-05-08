@@ -1,8 +1,14 @@
 package dev.incrediblehohol.iprobonusapilib.models.getInfo
 
+import com.google.gson.annotations.SerializedName
+
 data class UserInfo(
-    val typeBonusName: String,
-    val currentQuantity: Long,
-    val forBurningQuantity: Long,
-    val dateBurning: String
+    @SerializedName("typeBonusName")
+    val typeBonusName: String? = null,
+    @SerializedName("currentQuantity")
+    val currentQuantity: Long? = null,
+    @SerializedName("forBurningQuantity")
+    val forBurningQuantity: Long? = null,
+    @SerializedName("dateBurning")
+    val dateBurning: String? = null
 )
